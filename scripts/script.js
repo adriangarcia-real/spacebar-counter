@@ -1,9 +1,11 @@
-const counterElement = document.querySelector(".counter");
+const counterElement = document.getElementById("counter");
 
 let counter = 0;
 
-window.addEventListener("keypress", (e) => {
+function incrementCounter(e) {
   if (!(e.code === "Space")) return;
   counter += 1;
   counterElement.textContent = counter;
-});
+}
+
+window.addEventListener("keyup", incrementCounter);
