@@ -1,1 +1,1 @@
-# spacebar-counter
+A simple spacebar counter.
